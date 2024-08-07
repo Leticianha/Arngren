@@ -1,0 +1,120 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7FDF7;
+    margin: 40px 100px;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url(fonts/Poppins-Light);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(fonts/Poppins-Regular);
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(fonts/Poppins-Bold);
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(fonts/Poppins-ExtraBold);
+}
+
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url(fonts/Merriweather-Bold.ttf);
+}
+
+/* header */
+.box-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.tituloHeader {
+    font-family: 'Poppins-SemiBold';
+    color: #37474F;
+    font-size: 20px;
+}
+
+.box-nav {
+    display: flex;
+}
+
+.box-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+    margin-right: 20px;
+}
+
+.box-nav a p {
+    font-family: 'Poppins-Medium';
+}
+
+.box-nav a img {
+    width: auto;
+    height: 14px;
+    margin-left: 5px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #424242; /* Usando o Cinza Escuro da paleta */
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-bar:focus {
+    border-color: #64B5F6; /* Usando o Azul Claro da paleta */
+}
+
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #0D47A1; /* Usando o Azul Escuro da paleta */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #FF9800; /* Usando o Laranja da paleta */
+}

@@ -7,7 +7,7 @@
 
 body {
     background: #F7FDF7;
-    margin: 40px 100px;
+    margin: 40px 90px;
 }
 
 @font-face {
@@ -46,25 +46,32 @@ body {
 }
 
 /* header */
-.box-logo {
+#container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-logo a {
+    text-decoration: none;
     display: flex;
     align-items: center;
 }
 
 .logo {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
 }
 
 .tituloHeader {
     font-family: 'Poppins-SemiBold';
     color: #37474F;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .box-nav {
     display: flex;
+    align-items: center;
 }
 
 .box-nav a {
@@ -77,6 +84,12 @@ body {
 
 .box-nav a p {
     font-family: 'Poppins-Medium';
+    font-size: 16px;
+    color: #37474F;
+}
+
+.box-nav a p:hover {
+    color: #016149;
 }
 
 .box-nav a img {
@@ -85,36 +98,104 @@ body {
     margin-left: 5px;
 }
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-#search-bar {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #424242; /* Usando o Cinza Escuro da paleta */
-    border-radius: 5px;
+.box-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #016149; 
+    min-width: 160px;
+    box-shadow: 0 10px 30px 0px #0161490f;
+    z-index: 1;
+    border-radius: 10px;
+    top: 30px; /* Ajusta a posição para dar espaço ao triângulo */
+}
+
+/* Triângulo */
+.box-dropdown::before {
+    content: "";
+    position: absolute;
+    top: -8px; 
+    left: 20px; 
+    width: 15px;
+    height: 18px;
+    background-color: #016149;
+    border-radius: 20% 20%;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.box-dropdown a {
+    font-family: 'Poppins-Medium';
+    font-size: 15px;
+    color: white; 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.box-dropdown a:hover {
+    background-color: #016149; 
+    border-radius: 10px;
+}
+
+.dropdown:hover .box-dropdown {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.box-pesquisa {
+    background-color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px 0px #0161490f;
+}
+
+.box-pesquisa #barraPesquisa {
+    background-color: transparent;
+    border: none; 
+    outline: none; 
+    margin-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+}
+
+.box-pesquisa #barraPesquisa::placeholder {
+    font-family: 'Poppins-SemiBold'; 
+    color: #37474F;   
+    font-size: 18px;
+}
+
+.box-pesquisa #barraPesquisa:focus::placeholder {
+    color: #51575b; 
+}
+
+.box-pesquisa #barraPesquisa :focus{
+    background-color: transparent;
+    box-shadow: none;
     outline: none;
 }
 
-#search-bar:focus {
-    border-color: #64B5F6; /* Usando o Azul Claro da paleta */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
 }
 
-#search-button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: #0D47A1; /* Usando o Azul Escuro da paleta */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.box-pesquisa #btn-buscar {
+    background-color: transparent;
 }
 
-#search-button:hover {
-    background-color: #FF9800; /* Usando o Laranja da paleta */
+.box-pesquisa #btn-buscar i {
+    font-size: 20px;
+    color: #37474F;
+}
+
+.box-pesquisa #btn-buscar i :focus {
+    color: #016149;
 }

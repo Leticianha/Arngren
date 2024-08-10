@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styleProdIndividual.css">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png">
-    <title>Arngren - Bicicleta Elétrica - Três Rodas</title>
+    <title>Arngren - Fase de compra</title>
 </head>
-
 <body>
     <!-- header -->
     <header id="header">
@@ -78,118 +75,14 @@
         </div>
     </header>
 
-    <!-- main -->
-    <main id="main">
-        <!-- caminho -->
-        <section id="caminho">
-            <a href="#">Veículos</a>
-            <img src="img/arrowVirada.png" alt="">
-            <a href="#">Bicicletas</a>
-            <img src="img/arrowVirada.png" alt="">
-            <a href="#">Bicicleta Elétrica - Três Rodas</a>
-        </section>
+    <main id="main-confirmacao">
+        <h2>Confirmação da compra</h2>
 
-        <!-- individual -->
-        <section id="prodIndividual">
-            <div class="image-gallery">
-                <div class="thumbnails">
-                    <img src="img/principal.png" alt="Thumbnail 1" onclick="changeImage('img/principal.png')">
-                    <img src="img/1.png" alt="Thumbnail 2" onclick="changeImage('img/1.png')">
-                    <img src="img/2.png" alt="Thumbnail 3" onclick="changeImage('img/2.png')">
-                    <img src="img/3.png" alt="Thumbnail 3" onclick="changeImage('img/3.png')">
-                    <img src="img/4.png" alt="Thumbnail 4" onclick="changeImage('img/4.png')">
-                </div>
-                <img id="principal" src="img/principal.png" alt="Bicicleta Elétrica">
+        <div class="container-confirmacao">
+            <div class="box-resumo">
+                
             </div>
-
-            <div class="box-detalhes">
-                <h1>Bicicleta Elétrica - Três Rodas</h1>
-                <p>Triciclo Elétrico Fat Tire, Garfo de Suspensão Frontal, Freio a Disco, Compartimento de Armazenamento
-                    Removível e Assento, 500W, 750W, 48V, 17.5, 20Ah.
-                </p>
-                <div class="box-precos">
-                    <p class="preco">R$ 13.794,14</p>
-                    <a href="confirCompra.html"><button>COMPRAR</button></a>
-                </div>
-
-                <div class="color-options">
-                    <h2>Color:</h2>
-
-                    <div class="container-color">
-                        <div class="box-color" onclick="changeColor('img/preto.png')">
-                            <div class="color" style="background-color: black;">
-                            </div>
-                            <p>Preto</p>
-                        </div>
-
-                        <div class="box-color" onclick="changeColor('img/branco.png')">
-                            <div class="color" style="background-color: white;">
-                            </div>
-                            <p>Branco</p>
-                        </div>
-
-                        <div class="box-color" onclick="changeColor('img/vermelho.png')">
-                            <div class="color" style="background-color: red;">
-                            </div>
-                            <p>Verme...</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- semelhantes -->
-        <section id="semelhantes">
-            <img src="img/bolinhasUm.png" alt="bolinhas" class="bolinhasUm">
-
-            <h1>semelhantes</h1>
-            <h2>Clientes também pesquisam</h2>
-
-            <div class="container-carts">
-                <div class="cart-prodSmilar">
-                    <img src="img/bike1.png" alt="bike grande com cesta">
-
-                    <div class="box-infosProd">
-                        <h3>Urban Classic</h3>
-                        <p>R$ 2.850,00</p>
-                        <a href="#"><button>Ver Mais</button></a>
-                    </div>
-                </div>
-
-                <div class="cart-prodSmilar">
-                    <img src="img/bike2.png" alt="bike cinza com 2  suporte para garrafas e rodas grandes">
-
-                    <div class="box-infosProd">
-                        <h3>Ascent Carbon Pro</h3>
-                        <p>R$ 12.500,00</p>
-                        <a href="#"><button>Ver Mais</button></a>
-                    </div>
-                </div>
-
-                <div class="cart-prodSmilar">
-                    <img src="img/bike3.png" alt="bike moderna com detalhes vermelha">
-
-                    <div class="box-infosProd">
-                        <h3>TrailMaster X100</h3>
-                        <p>R$ 7.500,00</p>
-                        <a href="#"><button>Ver Mais</button></a>
-                    </div>
-                </div>
-
-                <div class="cart-prodSmilar">
-                    <img src="img/bike4.png" alt="bike branca de montanha">
-
-                    <div class="box-infosProd">
-                        <h3>RockRider Pro 350</h3>
-                        <p>R$ 4.800,00</p>
-                        <a href="#"><button>Ver Mais</button></a>
-                    </div>
-                </div>
-            </div>
-
-            <img src="img/bolinhasDois.png" alt="bolinhas" class="bolinhasDois">
-        </section>
+        </div>
     </main>
 
     <!-- footer -->
@@ -273,5 +166,4 @@
 
     <script src="main.js"></script>
 </body>
-
 </html>

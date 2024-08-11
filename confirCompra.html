@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleProdIndividual.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/png" href="img/favicon-32x32.png">
     <title>Arngren - Fase de compra</title>
 </head>
+
 <body>
     <!-- header -->
     <header id="header">
@@ -76,13 +79,211 @@
     </header>
 
     <main id="main-confirmacao">
-        <h2>Confirmação da compra</h2>
-
+        <section id="formulario">
+            <h2>Confirmação da compra</h2>
         <div class="container-confirmacao">
             <div class="box-resumo">
-                
+                <h3>Resumo do Pedido</h3>
+
+                <div class="detalhes-prod">
+                    <img src="img/2.png" alt="Produto">
+                    <div class="infos-prod">
+                        <h3>Bicicleta Elétrica - três rodas</h3>
+                        <div class="controle-quantidade">
+                            <button onclick="increaseQuantity()"><i class="fa-solid fa-plus"></i></button>
+                            <span id="quantity">1</span>
+                            <button onclick="decreaseQuantity()"><i class="fa-solid fa-minus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="linha"></div>
+
+                <div class="box-totais">
+                    <div>
+                        <span class="titulos">Subtotal</span>
+                        <span id="subtotal">R$ 2.475,00</span>
+                    </div>
+                    <div>
+                        <span class="titulos">Envio</span>
+                        <span>15 dias</span>
+                    </div>
+                    <div>
+                        <span class="titulos">Imposto</span>
+                        <span id="tax">5%</span>
+                    </div>
+
+                    <div class="linha"></div>
+
+                    <div class="total">
+                        <span class="titulos">Total</span>
+                        <span id="total">R$ 2.598,75</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-infosEnvios">
+                <h3>Informações de Envio</h3>
+
+                <form>
+                    <div class="container-form">
+                        <div class="box-input">
+                            <label for="firstName">Primeiro Nome</label>
+                            <input type="text" id="firstName" name="firstName" maxlength="50"
+                                placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        <div class="box-input">
+                            <label for="lastName">Último Nome</label>
+                            <input type="text" id="lastName" name="lastName" maxlength="50"
+                                placeholder="Digite seu sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="container-form">
+                        <div class="box-input">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" maxlength="254" placeholder="Digite seu e-mail"
+                                required>
+                        </div>
+                        <div class="box-input">
+                            <label for="phone">Número de Telefone</label>
+                            <input type="tel" id="phone" name="phone" maxlength="15" placeholder="(XX) XXXX-XXXX"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="box-input input-individual">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" name="address" maxlength="100"
+                            placeholder="Digite seu endereço completo" required>
+                    </div>
+
+                    <div class="container-form">
+                        <div class="box-input input-tres">
+                            <label for="city">Cidade</label>
+                            <input type="text" id="city" name="city" maxlength="50" placeholder="Digite sua cidade"
+                                required>
+                        </div>
+
+                        <div class="box-input input-tres">
+                            <label for="state">Estado</label>
+                            <select id="state" name="state" required>
+                                <option value="" disabled selected>Selecione seu estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <div class="box-input input-tres">
+                            <label for="postalCode">Código Postal</label>
+                            <input type="text" id="postalCode" name="postalCode" maxlength="10" placeholder="XXXXX-XXX"
+                                required>
+                        </div>
+                    </div>
+                    <!-- </form> -->
+
+                    <h3>Opção de Entrega</h3>
+
+                    <div class="box-opcoes">
+
+                        <div class="opcao-entrega">
+                            <input type="radio" id="padrao" name="entrega" value="padrao" checked>
+
+                            <label for="padrao">
+                                <div class="circulo-radio"></div>
+                                <div class="container-opcao">
+                                    <div class="entrega">
+                                        <h1>Entrega Padrão</h1>
+                                        <p>7-10 dias</p>
+                                    </div>
+                                    <h1>R$ 6</h1>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="opcao-entrega">
+                            <input type="radio" id="expressa" name="entrega" value="expressa">
+                            <label for="expressa">
+                                <div class="circulo-radio"></div>
+                                <div class="container-opcao">
+                                    <div class="entrega">
+                                        <h1>Entrega Expressa</h1>
+                                        <p>3-5 dias</p>
+                                    </div>
+                                    <h1>R$ 56,25</h1>
+                                </div>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <h3>Informações de Pagamento</h3>
+
+                    <!-- <form> -->
+                    <div class="box-input input-individual">
+                        <label for="cardNumber">Número do Cartão</label>
+                        <input id="cardNumber" type="text" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+                    </div>
+
+                    <div class="box-input input-individual">
+                        <label for="cardName">Nome do Cartão</label>
+                        <input id="cardName" type="text" maxlength="50" placeholder="Digite o nome como está no cartão"
+                            required>
+                    </div>
+
+                    <div class="container-form">
+                        <div class="box-input">
+                            <label for="expiryDate">Data de Validade (MM/AA)</label>
+                            <input id="expiryDate" type="text" maxlength="5" placeholder="MM/AA" required />
+                        </div>
+                        <div class="box-input">
+                            <label for="securityCode">Código de Segurança</label>
+                            <input id="securityCode" type="text" maxlength="4" placeholder="CVV" pattern="\d{3,4}"
+                                title="Digite 3 ou 4 dígitos" required />
+                        </div>
+                    </div>
+
+                    <div class="box-salvar">
+                        <input type="checkbox" id="saveCardInfo" name="saveCardInfo">
+                        <label for="saveCardInfo">Salvar as informações do meu cartão de crédito</label>
+                    </div>
+
+                    <div class="form-btn">
+                        <a href="#">
+                            <button type="submit" id="confirmOrder" name="confirmOrder">Confirmar Meu Pedido</button>
+                        </a>
+                    </div>
+
+                </form>
+
             </div>
         </div>
+        </section> 
     </main>
 
     <!-- footer -->
@@ -166,4 +367,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

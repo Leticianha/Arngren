@@ -4,15 +4,675 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Arngreen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <title>Arngren</title>
 </head>
 
 <body>
-    <div class="banner">
-        <p>EXPLORE AS ULTIMAS TENDENCIAS E OFERTAS EXCLUSIVAS</p>
-        <h1>Tudo o que você procura, aqui mesmo!</h1>
-    </div>
+    <!-- header -->
+    <header id="header">
+        <div id="container-header">
+            <div class="box-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                    <h1>Arngren</h1>
+                </a>
+            </div>
+
+            <nav id="container-nav">
+                <a href="index.html">Home</a>
+
+                <div class="container-dropdown">
+                    <div class="topico-nav">
+                        <p>Veículos</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="box-dropdown">
+                        <a href="categBike.html">Bicicletas</a>
+                        <a href="#">Carros</a>
+                        <a href="#">Kart</a>
+                        <a href="#">Motocicletas</a>
+                        <a href="#">Scooter</a>
+                        <a href="#">Vans</a>
+                    </div>
+                </div>
+
+                <div class="container-dropdown">
+                    <div class="topico-nav">
+                        <p>Brinquedos</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="box-dropdown">
+                        <a href="#">Arte e Artesanato</a>
+                        <a href="#">Construção</a>
+                        <a href="#">Eletrônicos</a>
+                        <a href="#">Exterior</a>
+                        <a href="#">Jogos e Quebra-Cabeças</a>
+                        <a href="#">Pelúcia</a>
+                    </div>
+                </div>
+
+                <div class="container-dropdown">
+                    <div class="topico-nav">
+                        <p>Eletrodomésticos</p>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="box-dropdown">
+                        <a href="#">Climatização</a>
+                        <a href="#">Cozinha</a>
+                        <a href="#">Lavanderia</a>
+                        <a href="#">Pequenos Eletrodomésticos</a>
+                        <a href="#">Lavanderia</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="box-pesquisa">
+                <input type="search" id="barraPesquisa" placeholder="Buscar">
+                <button id="btn-buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-principal">
+        <!-- barra de pesquisa -->
+        <section id="produtos-barraPesquisa">
+            <div class="cartBarra" data-name="CargoRider X">
+                <img src="img/bic1.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>CargoRider X</h3>
+                    <p>R$ 8.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Urban Classic">
+                <img src="img/bic2.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Urban Classic</h3>
+                    <p>R$ 2.850,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Ascent Carbon Pro">
+                <img src="img/bic3.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Ascent Carbon Pro</h3>
+                    <p>R$ 12.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Urban Cruiser">
+                <img src="img/bic4.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Urban Cruiser</h3>
+                    <p>R$ 1.200,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="CityLink Orange">
+                <img src="img/bic5.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>CityLink Orange</h3>
+                    <p>R$ 2.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="TrailMaster X100">
+                <img src="img/bic6.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>TrailMaster X100</h3>
+                    <p>R$ 7.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Trail Beast">
+                <img src="img/bic7.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Trail Beast</h3>
+                    <p>R$ 14.000,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Sunset Rider">
+                <img src="img/bic8.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Sunset Rider</h3>
+                    <p>R$ 3.000,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Lake Cruiser">
+                <img src="img/bic9.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Lake Cruiser</h3>
+                    <p>R$ 12.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="RockRider Xtreme 3000">
+                <img src="img/bic10.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>RockRider Xtreme 3000</h3>
+                    <p>R$ 4.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="RockRider Pro 350">
+                <img src="img/bic11.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>RockRider Pro 350</h3>
+                    <p>R$ 4.800,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Tourer Pro 5000">
+                <img src="img/bic12.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Tourer Pro 5000</h3>
+                    <p>R$ 6.800,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="no-products">
+                <p>Nenhum produto encontrado</p>
+            </div>
+        </section>
+
+        <!-- banner -->
+        <section id="banner">
+            <div class="container-banner">
+                <div class="text1">
+                    <div class="explore">
+                        <p>EXPLORE AS ÚLTIMAS TENDENCIAS E OFERTAS EXCLUSIVAS</p>
+                    </div>
+                    <div class="tudo">
+                        <h1>Tudo o que você procura,<span> aqui mesmo!</span></h1>
+                    </div>
+                    <div class="escolhas">
+                        <p>Escolhas fresquinhas e ofertas irresistíveis, tudo ao seu alcance.</p>
+                    </div>
+                </div>
+                <div class="imagem_aleatoria"><img src="img/fotoBanner.png" alt=""></div>
+            </div>
+        </section>
+
+        <!-- explorar -->
+        <section id="explorar">
+            <div class="text12">
+                <h1>DESTAQUE</h1>
+                <h2>Explore Top Produtos</h2>
+            </div>
+        </section>
+
+        <!-- top explorar -->
+        <section id="imagens_main">
+            <div class="a">
+                <div class="apenas_img">
+                    <img src="img/bic1.png" alt="">
+                </div>
+                <div class="back">
+                    <p class="bibi">CargoRider X</p>
+                    <div class="stars">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <p class="bibi2">R$ 8.500,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a">
+                <div class="apenas_img">
+                    <img src="img/bic12.png" alt="">
+                </div>
+                <div class="back">
+                    <p class="bibi">Tourer Pro 5000</p>
+                    <div class="stars">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <p class="bibi2">R$ 6.800,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a">
+                <div class="apenas_img">
+                    <img src="img/bic8.png" alt="">
+                </div>
+                <div class="back">
+                    <p class="bibi">Sunset Rider</p>
+                    <div class="stars">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <p class="bibi2">R$ 3.000,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="a">
+                <div class="apenas_img">
+                    <img src="img/bic5.png" alt="">
+                </div>
+                <div class="back">
+                    <p class="bibi">CityLink Orange</p>
+                    <div class="stars">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrela.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <img src="img/estrelaNada.png" alt="">
+                        <p class="bibi2">R$ 2.500,00</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- serviços -->
+        <section id="nossos">
+            <div class="container-nossos">
+                <img src="img/bolinhasTres.png" alt="" class="bolasUm">
+
+                <img src="img/fundoBanner.png" alt="" class="fundoNossos">
+
+                <h1>DESTAQUE</h1>
+                <h2>Explore Top Produtos</h2>
+
+                <div class="container-servicos">
+                    <div class="carts-serv">
+                        <div class="box-servico">
+                            <div class="boxIcone">
+                                <img src="img/iconeCoracao.png" alt="">
+                            </div>
+
+                            <div class="boxInfServico">
+                                <h3>Valorização dos Clientes</h3>
+                                <p>Priorizamos um atendimento excepcional aos nossos clientes.</p>
+                            </div>
+                        </div>
+
+                        <div class="box-servico">
+                            <div class="boxIcone">
+                                <img src="img/iconeMedalha.png" alt="">
+                            </div>
+
+                            <div class="boxInfServico">
+                                <h3>Satisfação do Cliente</h3>
+                                <p>Garantimos sua satisfação e uma experiência de compra ótima.</p>
+                            </div>
+                        </div>
+
+                        <div class="box-servico">
+                            <div class="boxIcone">
+                                <img src="img/iconeInterrogacao.png" alt="">
+                            </div>
+
+                            <div class="boxInfServico">
+                                <h3>Atendimento ao Cliente</h3>
+                                <p>Nossa equipe de suporte está aqui para resolver suas dúvidas e preocupações.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carts-serv ">
+                        <div class="box-servico">
+                            <div class="boxInfServico inverso">
+                                <h3>Respostas rápidas</h3>
+                                <p>Respondemos rapidamente a todas as consultas de clientes.</p>
+                            </div>
+
+                            <div class="boxIcone">
+                                <img src="img/iconeEnviar.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="box-servico">
+                            <div class="boxInfServico inverso">
+                                <h3>Canais de Atendimento</h3>
+                                <p>Entre em contato por telefone, e-mail ou chat durante o horário comercial.</p>
+                            </div>
+
+                            <div class="boxIcone">
+                                <img src="img/iconeTelecomunicacao.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="box-servico">
+                            <div class="boxInfServico inverso">
+                                <h3>Feedback</h3>
+                                <p>Aceitamos feedback para melhorar nossos produtos e serviços.</p>
+                            </div>
+
+                            <div class="boxIcone">
+                                <img src="img/iconeBaloes.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <img src="img/bolinhasDois.png" alt="" class="bolasDois">
+            </div>
+        </section>
+
+        <!-- comentarios -->
+        <section id="comentario">
+            <h1>FEEDBACK</h1>
+            <h2>Comentários Dos Clientes</h2>
+
+            <div class="carousel-container">
+                <div class="box-buttons">
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil1.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>Mariana Silva</h4>
+                                <h5>12/08/23</h5>
+                            </div>
+                        </div>
+
+                        <p>A variedade de produtos na Arngren é incrível, sempre encontro algo que preciso. </p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil4.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>João Pedro</h4>
+                                <h5>17/02/23</h5>
+                            </div>
+                        </div>
+
+                        <p>A loja Arngren é incrível! Comprei um presente para meu pai e ele amou. A entrega foi super
+                            rápida e os preços são muito justos. Recomendo demais!</p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil5.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>Carlos Mendes</h4>
+                                <h5>05/07/22</h5>
+                            </div>
+                        </div>
+
+                        <p>Ótima loja! Comprei alguns itens que precisava para um projeto e tudo chegou perfeito.</p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil2.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>Ana Costa</h4>
+                                <h5>22/10/19</h5>
+                            </div>
+                        </div>
+
+                        <p>A Arngren é minha loja favorita para encontrar aquelas 'bugangas' que não acho em lugar
+                            nenhum! Sempre me surpreendo com a variedade e a qualidade dos produtos.</p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil3.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>Clara Ferreira</h4>
+                                <h5>30/08/18</h5>
+                            </div>
+                        </div>
+
+                        <p>Estou encantada com a Arngren! Eles têm de tudo, desde gadgets a itens raros. Fiz uma compra
+                            e a experiência foi fantástica, com entrega rápida e produtos de qualidade.</p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="box-perfil">
+                            <img src="img/perfil6.png" alt="Avatar 1">
+                            <div class="perfi">
+                                <h4>Lucas Oliveira</h4>
+                                <h5>21/04/24</h5>
+                            </div>
+                        </div>
+
+                        <p>Recomendo para todos que procuram algo diferente!</p>
+                        <div class="stars">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrela.png" alt="">
+                            <img src="img/estrelaNada.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div id="container-footer">
+            <div class="contatos">
+                <div class="box-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                        <h1>Arngren</h1>
+                    </a>
+                </div>
+
+                <div class="box-contatos">
+                    <p>Entre em contato em caso de dúvidas ou para mais informações.</p>
+
+                    <div class="icones-contatos">
+                        <div class="circulo">
+                            <a href="skype:frithjof.arngren?chat"><i class="fa-brands fa-skype"></i></a>
+                        </div>
+
+                        <div class="circulo">
+                            <a href="mailto:frithjof@arngren.net"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+
+                        <div class="circulo">
+                            <a href="mailto:frithjof.arngren@gmail.com"><i class="fa-solid fa-at"></i></a>
+                        </div>
+
+                        <div class="phone-container circulo">
+                            <a href="tel:+4722149166"><i class="fa-solid fa-phone"></i></a>
+                            <div class="tooltip">+47-22149166</div>
+                        </div>
+
+                        <div class="phone-container circulo">
+                            <a href="tel:+4722149166"><img src="img/whatsaap.png" alt=""></a>
+                            <div class="tooltip">+47-92060873</div>
+                        </div>
+
+                        <div class="phone-container circulo">
+                            <a href="tel:+4722149166"><i class="fa-solid fa-fax"></i></a>
+                            <div class="tooltip">+47-22148237</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="box-link">
+                    <h1>Atendimento ao cliente</h1>
+                    <a href="#">Contate-nos</a>
+                    <a href="#">Feedback</a>
+                    <a href="#">Envio</a>
+                    <a href="#">Devoluções</a>
+                </div>
+
+                <div class="box-link">
+                    <h1>Departamentos</h1>
+                    <a href="#">Veículos</a>
+                    <a href="#">Brinquedos</a>
+                    <a href="#">Eledromésticos</a>
+                    <a href="#">Itens Únicos</a>
+                </div>
+
+                <div class="box-link">
+                    <h1>Geral</h1>
+                    <a href="index.html">Home</a>
+                    <a href="#">Destaques</a>
+                    <a href="#">Serviços</a>
+                    <a href="#">Comentários</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="direitoautoral">
+            <p>Todos os direitos reservados por Arngren.net</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('btn-buscar').addEventListener('click', function () {
+            // Captura o valor da barra de pesquisa
+            const searchValue = document.getElementById('barraPesquisa').value.toLowerCase();
+            const products = document.querySelectorAll('.cartBarra');
+            let found = false;
+
+            // Loop através dos produtos e filtra
+            products.forEach(function (product) {
+                const productName = product.getAttribute('data-name').toLowerCase();
+
+                // Verifica se o nome do produto contém o valor da pesquisa
+                if (productName.includes(searchValue)) {
+                    product.style.display = 'block'; // Exibe o produto se houver correspondência
+                    found = true;
+                } else {
+                    product.style.display = 'none'; // Oculta o produto se não houver correspondência
+                }
+            });
+
+            // Exibe ou oculta a mensagem de "Nenhum produto encontrado"
+            const noProductsMessage = document.getElementById('no-products');
+            if (found) {
+                noProductsMessage.style.display = 'none'; // Oculta a mensagem se houver produtos encontrados
+            } else {
+                noProductsMessage.style.display = 'block'; // Exibe a mensagem se nenhum produto for encontrado
+            }
+        });
+
+        //carrosel
+        let index = 0;
+
+        document.querySelector('.next').addEventListener('click', () => {
+            const items = document.querySelectorAll('.carousel-item');
+            const itemsPerSlide = 3;  // Quantos itens aparecem por vez
+            const totalItems = items.length;
+            const containerWidth = document.querySelector('.carousel-container').clientWidth;
+
+            index = (index + 1) % (totalItems / itemsPerSlide);
+
+            document.querySelector('.carousel').style.transform = `translateX(-${containerWidth * index}px)`;
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            const items = document.querySelectorAll('.carousel-item');
+            const itemsPerSlide = 3;  // Quantos itens aparecem por vez
+            const totalItems = items.length;
+            const containerWidth = document.querySelector('.carousel-container').clientWidth;
+
+            index = (index - 1 + (totalItems / itemsPerSlide)) % (totalItems / itemsPerSlide);
+
+            document.querySelector('.carousel').style.transform = `translateX(-${containerWidth * index}px)`;
+        });
+
+    </script>
 </body>
 
 </html>

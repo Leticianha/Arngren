@@ -38,7 +38,7 @@ function changeColor(image) {
 
 // quantidade
 let quantity = 1;
-const productPrice = 2475.00; // Preço unitário do produto
+const productPrice = 8500.00; // Preço unitário do produto
 const taxRate = 0.05; // Taxa de imposto
 
 function updateQuantity() {
@@ -105,3 +105,4 @@ document.getElementById('expiryDate').addEventListener('input', function (e) {
     }
     e.target.value = input4;
 });
+

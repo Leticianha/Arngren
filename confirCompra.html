@@ -30,7 +30,7 @@
                         <div class="arrow"></div>
                     </div>
                     <div class="box-dropdown">
-                        <a href="#">Bicicletas</a>
+                        <a href="categBike.html">Bicicletas</a>
                         <a href="#">Carros</a>
                         <a href="#">Kart</a>
                         <a href="#">Motocicletas</a>
@@ -79,211 +79,351 @@
     </header>
 
     <main id="main-confirmacao">
+        <!-- barra de pesquisa -->
+        <section id="produtos-barraPesquisa">
+            <div class="cartBarra" data-name="CargoRider X">
+                <img src="img/bic1.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>CargoRider X</h3>
+                    <p>R$ 8.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Urban Classic">
+                <img src="img/bic2.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Urban Classic</h3>
+                    <p>R$ 2.850,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Ascent Carbon Pro">
+                <img src="img/bic3.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Ascent Carbon Pro</h3>
+                    <p>R$ 12.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Urban Cruiser">
+                <img src="img/bic4.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Urban Cruiser</h3>
+                    <p>R$ 1.200,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="CityLink Orange">
+                <img src="img/bic5.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>CityLink Orange</h3>
+                    <p>R$ 2.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="TrailMaster X100">
+                <img src="img/bic6.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>TrailMaster X100</h3>
+                    <p>R$ 7.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Trail Beast">
+                <img src="img/bic7.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Trail Beast</h3>
+                    <p>R$ 14.000,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Sunset Rider">
+                <img src="img/bic8.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Sunset Rider</h3>
+                    <p>R$ 3.000,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Lake Cruiser">
+                <img src="img/bic9.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Lake Cruiser</h3>
+                    <p>R$ 12.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="RockRider Xtreme 3000">
+                <img src="img/bic10.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>RockRider Xtreme 3000</h3>
+                    <p>R$ 4.500,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="RockRider Pro 350">
+                <img src="img/bic11.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>RockRider Pro 350</h3>
+                    <p>R$ 4.800,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cartBarra" data-name="Tourer Pro 5000">
+                <img src="img/bic12.png" alt="triciclo com cesta e suporte grande">
+                <div class="cartBarra-detalhes">
+                    <h3>Tourer Pro 5000</h3>
+                    <p>R$ 6.800,00</p>
+                    <a href="prodIndividual.html">
+                        <button>Ver mais</button>
+                    </a>
+                </div>
+            </div>
+
+            <div id="no-products">
+                <p>Nenhum produto encontrado</p>
+            </div>
+        </section>
+
+        <!-- formulario -->
         <section id="formulario">
             <h2>Confirmação da compra</h2>
-        <div class="container-confirmacao">
-            <div class="box-resumo">
-                <h3>Resumo do Pedido</h3>
+            <div class="container-confirmacao">
+                <div class="box-resumo">
+                    <h3>Resumo do Pedido</h3>
 
-                <div class="detalhes-prod">
-                    <img src="img/2.png" alt="Produto">
-                    <div class="infos-prod">
-                        <h3>Bicicleta Elétrica - três rodas</h3>
-                        <div class="controle-quantidade">
-                            <button onclick="increaseQuantity()"><i class="fa-solid fa-plus"></i></button>
-                            <span id="quantity">1</span>
-                            <button onclick="decreaseQuantity()"><i class="fa-solid fa-minus"></i></button>
+                    <div class="detalhes-prod">
+                        <img src="img/2.png" alt="Produto">
+                        <div class="infos-prod">
+                            <h3>CargoRider X</h3>
+                            <div class="controle-quantidade">
+                                <button onclick="increaseQuantity()"><i class="fa-solid fa-plus"></i></button>
+                                <span id="quantity">1</span>
+                                <button onclick="decreaseQuantity()"><i class="fa-solid fa-minus"></i></button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="linha"></div>
-
-                <div class="box-totais">
-                    <div>
-                        <span class="titulos">Subtotal</span>
-                        <span id="subtotal">R$ 2.475,00</span>
-                    </div>
-                    <div>
-                        <span class="titulos">Envio</span>
-                        <span>15 dias</span>
-                    </div>
-                    <div>
-                        <span class="titulos">Imposto</span>
-                        <span id="tax">5%</span>
                     </div>
 
                     <div class="linha"></div>
 
-                    <div class="total">
-                        <span class="titulos">Total</span>
-                        <span id="total">R$ 2.598,75</span>
+                    <div class="box-totais">
+                        <div>
+                            <span class="titulos">Subtotal</span>
+                            <span id="subtotal">R$ 8.500,00</span>
+                        </div>
+                        <div>
+                            <span class="titulos">Envio</span>
+                            <span>15 dias</span>
+                        </div>
+                        <div>
+                            <span class="titulos">Imposto</span>
+                            <span id="tax">5%</span>
+                        </div>
+
+                        <div class="linha"></div>
+
+                        <div class="total">
+                            <span class="titulos">Total</span>
+                            <span id="total">R$ 8.925,00</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="box-infosEnvios">
-                <h3>Informações de Envio</h3>
+                <div class="box-infosEnvios">
+                    <h3>Informações de Envio</h3>
 
-                <form>
-                    <div class="container-form">
-                        <div class="box-input">
-                            <label for="firstName">Primeiro Nome</label>
-                            <input type="text" id="firstName" name="firstName" maxlength="50"
-                                placeholder="Digite seu primeiro nome" required>
-                        </div>
-                        <div class="box-input">
-                            <label for="lastName">Último Nome</label>
-                            <input type="text" id="lastName" name="lastName" maxlength="50"
-                                placeholder="Digite seu sobrenome" required>
-                        </div>
-                    </div>
-
-                    <div class="container-form">
-                        <div class="box-input">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" maxlength="254" placeholder="Digite seu e-mail"
-                                required>
-                        </div>
-                        <div class="box-input">
-                            <label for="phone">Número de Telefone</label>
-                            <input type="tel" id="phone" name="phone" maxlength="15" placeholder="(XX) XXXX-XXXX"
-                                required>
-                        </div>
-                    </div>
-
-                    <div class="box-input input-individual">
-                        <label for="address">Endereço</label>
-                        <input type="text" id="address" name="address" maxlength="100"
-                            placeholder="Digite seu endereço completo" required>
-                    </div>
-
-                    <div class="container-form">
-                        <div class="box-input input-tres">
-                            <label for="city">Cidade</label>
-                            <input type="text" id="city" name="city" maxlength="50" placeholder="Digite sua cidade"
-                                required>
+                    <form>
+                        <div class="container-form">
+                            <div class="box-input">
+                                <label for="firstName">Primeiro Nome</label>
+                                <input type="text" id="firstName" name="firstName" maxlength="50"
+                                    placeholder="Digite seu primeiro nome" required>
+                            </div>
+                            <div class="box-input">
+                                <label for="lastName">Último Nome</label>
+                                <input type="text" id="lastName" name="lastName" maxlength="50"
+                                    placeholder="Digite seu sobrenome" required>
+                            </div>
                         </div>
 
-                        <div class="box-input input-tres">
-                            <label for="state">Estado</label>
-                            <select id="state" name="state" required>
-                                <option value="" disabled selected>Selecione seu estado</option>
-                                <option value="AC">Acre</option>
-                                <option value="AL">Alagoas</option>
-                                <option value="AP">Amapá</option>
-                                <option value="AM">Amazonas</option>
-                                <option value="BA">Bahia</option>
-                                <option value="CE">Ceará</option>
-                                <option value="DF">Distrito Federal</option>
-                                <option value="ES">Espírito Santo</option>
-                                <option value="GO">Goiás</option>
-                                <option value="MA">Maranhão</option>
-                                <option value="MT">Mato Grosso</option>
-                                <option value="MS">Mato Grosso do Sul</option>
-                                <option value="MG">Minas Gerais</option>
-                                <option value="PA">Pará</option>
-                                <option value="PB">Paraíba</option>
-                                <option value="PR">Paraná</option>
-                                <option value="PE">Pernambuco</option>
-                                <option value="PI">Piauí</option>
-                                <option value="RJ">Rio de Janeiro</option>
-                                <option value="RN">Rio Grande do Norte</option>
-                                <option value="RS">Rio Grande do Sul</option>
-                                <option value="RO">Rondônia</option>
-                                <option value="RR">Roraima</option>
-                                <option value="SC">Santa Catarina</option>
-                                <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
-                                <option value="TO">Tocantins</option>
-                            </select>
+                        <div class="container-form">
+                            <div class="box-input">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" maxlength="254"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+                            <div class="box-input">
+                                <label for="phone">Número de Telefone</label>
+                                <input type="tel" id="phone" name="phone" maxlength="15" placeholder="(XX) XXXX-XXXX"
+                                    required>
+                            </div>
                         </div>
 
-                        <div class="box-input input-tres">
-                            <label for="postalCode">Código Postal</label>
-                            <input type="text" id="postalCode" name="postalCode" maxlength="10" placeholder="XXXXX-XXX"
-                                required>
+                        <div class="box-input input-individual">
+                            <label for="address">Endereço</label>
+                            <input type="text" id="address" name="address" maxlength="100"
+                                placeholder="Digite seu endereço completo" required>
                         </div>
-                    </div>
-                    <!-- </form> -->
 
-                    <h3>Opção de Entrega</h3>
+                        <div class="container-form">
+                            <div class="box-input input-tres">
+                                <label for="city">Cidade</label>
+                                <input type="text" id="city" name="city" maxlength="50" placeholder="Digite sua cidade"
+                                    required>
+                            </div>
 
-                    <div class="box-opcoes">
+                            <div class="box-input input-tres">
+                                <label for="state">Estado</label>
+                                <select id="state" name="state" required>
+                                    <option value="" disabled selected>Selecione seu estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
 
-                        <div class="opcao-entrega">
-                            <input type="radio" id="padrao" name="entrega" value="padrao" checked>
+                            <div class="box-input input-tres">
+                                <label for="postalCode">Código Postal</label>
+                                <input type="text" id="postalCode" name="postalCode" maxlength="10"
+                                    placeholder="XXXXX-XXX" required>
+                            </div>
+                        </div>
+                        <!-- </form> -->
 
-                            <label for="padrao">
-                                <div class="circulo-radio"></div>
-                                <div class="container-opcao">
-                                    <div class="entrega">
-                                        <h1>Entrega Padrão</h1>
-                                        <p>7-10 dias</p>
+                        <h3>Opção de Entrega</h3>
+
+                        <div class="box-opcoes">
+
+                            <div class="opcao-entrega">
+                                <input type="radio" id="padrao" name="entrega" value="padrao" checked>
+
+                                <label for="padrao">
+                                    <div class="circulo-radio"></div>
+                                    <div class="container-opcao">
+                                        <div class="entrega">
+                                            <h1>Entrega Padrão</h1>
+                                            <p>7-10 dias</p>
+                                        </div>
+                                        <h1>R$ 6</h1>
                                     </div>
-                                    <h1>R$ 6</h1>
-                                </div>
-                            </label>
-                        </div>
+                                </label>
+                            </div>
 
-                        <div class="opcao-entrega">
-                            <input type="radio" id="expressa" name="entrega" value="expressa">
-                            <label for="expressa">
-                                <div class="circulo-radio"></div>
-                                <div class="container-opcao">
-                                    <div class="entrega">
-                                        <h1>Entrega Expressa</h1>
-                                        <p>3-5 dias</p>
+                            <div class="opcao-entrega">
+                                <input type="radio" id="expressa" name="entrega" value="expressa">
+                                <label for="expressa">
+                                    <div class="circulo-radio"></div>
+                                    <div class="container-opcao">
+                                        <div class="entrega">
+                                            <h1>Entrega Expressa</h1>
+                                            <p>3-5 dias</p>
+                                        </div>
+                                        <h1>R$ 56,25</h1>
                                     </div>
-                                    <h1>R$ 56,25</h1>
-                                </div>
-                            </label>
+                                </label>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <h3>Informações de Pagamento</h3>
 
-                    <h3>Informações de Pagamento</h3>
-
-                    <!-- <form> -->
-                    <div class="box-input input-individual">
-                        <label for="cardNumber">Número do Cartão</label>
-                        <input id="cardNumber" type="text" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
-                    </div>
-
-                    <div class="box-input input-individual">
-                        <label for="cardName">Nome do Cartão</label>
-                        <input id="cardName" type="text" maxlength="50" placeholder="Digite o nome como está no cartão"
-                            required>
-                    </div>
-
-                    <div class="container-form">
-                        <div class="box-input">
-                            <label for="expiryDate">Data de Validade (MM/AA)</label>
-                            <input id="expiryDate" type="text" maxlength="5" placeholder="MM/AA" required />
+                        <!-- <form> -->
+                        <div class="box-input input-individual">
+                            <label for="cardNumber">Número do Cartão</label>
+                            <input id="cardNumber" type="text" maxlength="19" placeholder="XXXX XXXX XXXX XXXX"
+                                required>
                         </div>
-                        <div class="box-input">
-                            <label for="securityCode">Código de Segurança</label>
-                            <input id="securityCode" type="text" maxlength="4" placeholder="CVV" pattern="\d{3,4}"
-                                title="Digite 3 ou 4 dígitos" required />
+
+                        <div class="box-input input-individual">
+                            <label for="cardName">Nome do Cartão</label>
+                            <input id="cardName" type="text" maxlength="50"
+                                placeholder="Digite o nome como está no cartão" required>
                         </div>
-                    </div>
 
-                    <div class="box-salvar">
-                        <input type="checkbox" id="saveCardInfo" name="saveCardInfo">
-                        <label for="saveCardInfo">Salvar as informações do meu cartão de crédito</label>
-                    </div>
+                        <div class="container-form">
+                            <div class="box-input">
+                                <label for="expiryDate">Data de Validade (MM/AA)</label>
+                                <input id="expiryDate" type="text" maxlength="5" placeholder="MM/AA" required />
+                            </div>
+                            <div class="box-input">
+                                <label for="securityCode">Código de Segurança</label>
+                                <input id="securityCode" type="text" maxlength="4" placeholder="CVV" pattern="\d{3,4}"
+                                    title="Digite 3 ou 4 dígitos" required />
+                            </div>
+                        </div>
 
-                    <div class="form-btn">
-                        <a href="#">
-                            <button type="submit" id="confirmOrder" name="confirmOrder">Confirmar Meu Pedido</button>
-                        </a>
-                    </div>
+                        <div class="box-salvar">
+                            <input type="checkbox" id="saveCardInfo" name="saveCardInfo">
+                            <label for="saveCardInfo">Salvar as informações do meu cartão de crédito</label>
+                        </div>
 
-                </form>
+                        <div class="form-btn">
+                                <button type="submit" id="confirmOrder" name="confirmOrder">
+                                    <a href="compraRealizada.html">Confirmar MeuPedido</a>
+                                </button>
+                        </div>
+                    </form>
 
+                </div>
             </div>
-        </div>
-        </section> 
+        </section>
     </main>
 
     <!-- footer -->
@@ -366,6 +506,35 @@
     </footer>
 
     <script src="main.js"></script>
+    <script>
+        document.getElementById('btn-buscar').addEventListener('click', function () {
+            // Captura o valor da barra de pesquisa
+            const searchValue = document.getElementById('barraPesquisa').value.toLowerCase();
+            const products = document.querySelectorAll('.cartBarra');
+            let found = false;
+
+            // Loop através dos produtos e filtra
+            products.forEach(function (product) {
+                const productName = product.getAttribute('data-name').toLowerCase();
+
+                // Verifica se o nome do produto contém o valor da pesquisa
+                if (productName.includes(searchValue)) {
+                    product.style.display = 'block'; // Exibe o produto se houver correspondência
+                    found = true;
+                } else {
+                    product.style.display = 'none'; // Oculta o produto se não houver correspondência
+                }
+            });
+
+            // Exibe ou oculta a mensagem de "Nenhum produto encontrado"
+            const noProductsMessage = document.getElementById('no-products');
+            if (found) {
+                noProductsMessage.style.display = 'none'; // Oculta a mensagem se houver produtos encontrados
+            } else {
+                noProductsMessage.style.display = 'block'; // Exibe a mensagem se nenhum produto for encontrado
+            }
+        });
+    </script>
 </body>
 
 </html>

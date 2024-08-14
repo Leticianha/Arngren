@@ -7,7 +7,7 @@
 
 body {
     background: #F7FDF7;
-    margin: 60px 120px;
+    margin: 50px 120px;
 }
 
 a {
@@ -63,6 +63,7 @@ a {
 #container-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .box-logo a {
@@ -71,8 +72,8 @@ a {
 }
 
 .box-logo a img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: auto;
     margin-right: 5px;
 }
 
@@ -161,6 +162,7 @@ a {
     padding: 8px 15px;
     border-radius: 15px;
     box-shadow: 0 10px 30px 0px #0161490f;
+    height: 40px;
 }
 
 .box-pesquisa #barraPesquisa {
@@ -1295,8 +1297,7 @@ form {
 }
 
 .carousel {
-    display: flex;
-    gap: 60px;
+    display: flex;  
     transition: transform 0.5s ease-in-out;
 }
 
@@ -1324,48 +1325,74 @@ form {
     color: #37474f81;
 }
 
-.carousel-item {
-    background: #fff;
-    padding: 30px;
-    border-radius: 30px;
-}
-
-.carousel-item p {
-    font-family: 'Poppins-Medium';
+.carousel p {
+    font-family: 'Poppins-Light';
     font-size: 16px;
-    color: #37474fd7;
-    width: 300px;
+    color: #37474fc0;
+    text-align: left;
 }
 
 .carousel-container {
+    position: relative;
+    /* width: 100%; */
+    max-width: 1000px;
+    margin: auto;
     overflow: hidden;
+    height: 259px;
 }
 
-.carousel-container button {
-    width: 50px;
-    height: 50px;
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 32.333%; /* Para mostrar três comentários por vez */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+    box-shadow: 0 10px 30px 0px #0161490f;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 2230px;
     border: 2px solid #016149;
     background-color: transparent;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #37474F;
     font-family: 'Poppins-Bold';
+    color: #37474F;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
     display: flex;
-    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
     justify-content: center;
+    align-items: center;
 }
 
-.carousel-container button:hover {
+.prev:hover, .next:hover {
     background-color: #016149;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
-.box-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.prev {
+    left: 120px;
 }
+
+.next {
+    right: 120px;
+}
+
+.stars {
+    color: #ff9800;
+}
+
 
 /* compra realizada */
 .titulo-finalizacao {
